@@ -9,7 +9,7 @@ router.get('/', function (req, res, next) {
         value = search_params.get("x")
         if(value === null)
         {
-            value=Math.round(Math.random()*999);
+            value=Math.round(Math.random()*99);
         }     
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write('Math.hypot() applied to ' + value + ' is ' + Math.hypot(2,value));
